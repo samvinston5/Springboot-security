@@ -29,7 +29,7 @@ public class JwtFilter extends OncePerRequestFilter{
 	        response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
 	        response.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, Accept, Origin, User-Agent, DNT, Cache-Control, X-Mx-ReqToken, Keep-Alive, X-Requested-With, If-Modified-Since");
 	        response.setHeader("Access-Control-Allow-Credentials", "true");
-		if(request.getRequestURI().equals("/api/auth") && request.getMethod().equals("POST"))
+		if(request.getRequestURI().equals("/register") && request.getMethod().equals("POST"))
 		{
 			System.out.println("filter invoked");
 			filterChain.doFilter(request, response);

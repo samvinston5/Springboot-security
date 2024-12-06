@@ -42,7 +42,7 @@ public class AuthController {
 		tokenGen.generateToken(user.getUserId(), user.getPassword(), "USER");
 		
 		String token = tokenGen.getToken();
-		return new ResponseEntity<>(token	,HttpStatus.OK);
+		return new ResponseEntity<>(token,HttpStatus.OK);
 		
 	}
 	
