@@ -33,4 +33,9 @@ public class JwtToken {
 			return false;
 		}
 	}
+
+	public String getSecretkey() {
+		// TODO Auto-generated method stub
+		return SECRETKEY;
+	}
 }
